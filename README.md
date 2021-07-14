@@ -31,7 +31,7 @@ Here are some guidelines for installing the project on your local machine in ord
 
 2. Then, make sure that your repo includes a package.json with the required dependencies. You can create one by running ```npm init``` in your command line, and ```npm install``` to install the dependencies.
 
-3. Run ```node server.js```, ```node server``` or npm start in your terminal to launch the application. Or check the deployed app directly on our heroku link (???????).
+3. Run ```node server.js```, ```node server``` or npm start in your terminal to launch the application. Or check the deployed app directly on our heroku link (https://tranquil-falls-44991.herokuapp.com/).
 
 4. Enjoy and don't hesitate to contribute!
 
@@ -39,3 +39,4 @@ Here are some guidelines for installing the project on your local machine in ord
 https://github.com/Noemiegrau/deep-thoughtss
 
 ## **_Link URL of deployed app to Heroku_**
+https://tranquil-falls-44991.herokuapp.com/
