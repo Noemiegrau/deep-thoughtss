@@ -9,24 +9,20 @@
 * [Link URL of deployed app to Heroku](#link-URL-of-deployed-app-to-Heroku)
 
 ## **_Description of the project_**
-This single page react MERN app is a social media application where users can create an account, post their thoughts for others to see, and interact with other users through these thoughts, be friends with each other and comments on posts. This application uses Front end routing, api request, user authentication.
+This single page MERN app is a social media application where users can create an account, post their thoughts for others to see, and interact with other users through these thoughts, be friends with each other and comments on posts. This application also uses front-end routing, api requests (queries and mutations) and user authentication.
 
 ## **_Technologies used_**
 Project is created using:
 * JavaScript
-* Nodejs
-* Expressjs
-* MongoDB
-* Mongoose
+* MERN (MongoDB, Mongoose, Expressjs, REACT, Nodejs)
 * GraphQL
 * Apollo
 * JsonWebToken
 * Path
 * Heroku
-* REACT
 
 ## **_Usage_**
-![Screen Shot 2021-06-01 at 8 28 03 AM](https://user-images.githubusercontent.com/78329298/120350038-7868ca00-c2b3-11eb-9468-eb433a7e9e3c.png)
+![Screen Shot 2021-07-13 at 10 25 21 PM](https://user-images.githubusercontent.com/78329298/125567486-0f4f9f20-8694-429e-911e-91e04f8c6825.png)
 
 ## **_Installation_**
 Here are some guidelines for installing the project on your local machine in order to be able to try it:
