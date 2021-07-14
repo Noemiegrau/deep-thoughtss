@@ -1,18 +1,23 @@
 import React from 'react';
-
 import { Redirect, useParams } from 'react-router-dom';
 
 import ThoughtList from '../components/ThoughtList';
-import FriendList from '../components/FriendList';
-import ThoughtForm from '../components/ThoughtForm';
 
 import { useQuery, useMutation } from '@apollo/client';
-import { ADD_FRIEND } from '../utils/mutations';
+
+import FriendList from '../components/FriendList';
+
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
+
 import Auth from '../utils/auth';
+
+import { ADD_FRIEND } from '../utils/mutations';
+
+import ThoughtForm from '../components/ThoughtForm';
 
 const Profile = () => {
   const [addFriend] = useMutation(ADD_FRIEND);
+
   const { username: userParam } = useParams();
 
   const { loading, data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
@@ -27,7 +32,7 @@ const Profile = () => {
   }
 
   if (loading) {
-    return <div>Loading...</div>
+    return <div>Loading...</div>;
   }
 
   if (!user?.username) {
@@ -44,22 +49,22 @@ const Profile = () => {
         variables: { id: user._id }
       });
     } catch (e) {
-      console.log(e);
+      console.error(e);
     }
-  }
+  };
 
   return (
     <div>
       <div className="flex-row mb-3">
-        <h2 className="bg-dark text-secondary p-3 display-inline-block">
-          Viewing {userParam ? `${user.username}'s` : 'your'} profile.
-        </h2>
+      <h2 className="bg-dark text-secondary p-3 display-inline-block">
+        Viewing {userParam ? `${user.username}'s` : 'your'} profile.
+      </h2>
 
-        {userParam && (
-          <button className="btn ml-auto" onClick={handleClick}>
-            Add Friend
-          </button>
-        )}
+      {userParam && (
+        <button className="btn ml-auto" onClick={handleClick}>
+          Add Friend
+        </button>
+      )}
       </div>
 
       <div className="flex-row justify-space-between mb-3">
@@ -68,7 +73,7 @@ const Profile = () => {
         </div>
 
         <div className="col-12 col-lg-3 mb-3">
-          <FriendList 
+          <FriendList
             username={user.username}
             friendCount={user.friendCount}
             friends={user.friends}

@@ -5,7 +5,6 @@ import Auth from '../utils/auth';
 
 const Signup = () => {
   const [formState, setFormState] = useState({ username: '', email: '', password: '' });
-
   const [addUser, { error }] = useMutation(ADD_USER);
 
   // update state based on form input changes
@@ -18,8 +17,8 @@ const Signup = () => {
     });
   };
 
-  // submit form
-  const handleFormSubmit = async (event) => {
+  // submit form (notice the async!)
+  const handleFormSubmit = async event => {
     event.preventDefault();
 
     // use try/catch instead of promises to handle errors
@@ -27,9 +26,9 @@ const Signup = () => {
       const { data } = await addUser({
         variables: { ...formState }
       });
-
+    
       Auth.login(data.addUser.token);
-    } catch(e) {
+    } catch (e) {
       console.error(e);
     }
   };
@@ -71,8 +70,8 @@ const Signup = () => {
               <button className='btn d-block w-100' type='submit'>
                 Submit
               </button>
-              {error && <div>Sign up failed</div>}
             </form>
+            {error && <div>Sign up failed</div>}
           </div>
         </div>
       </div>
