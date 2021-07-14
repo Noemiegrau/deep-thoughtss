@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Noemiegrau/deep-thoughts.git"
+    "url": "git+https://github.com/Noemiegrau/deep-thoughtss.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Noemiegrau/deep-thoughts/issues"
+    "url": "https://github.com/Noemiegrau/deep-thoughtss/issues"
   },
-  "homepage": "https://github.com/Noemiegrau/deep-thoughts#readme",
+  "homepage": "https://github.com/Noemiegrau/deep-thoughtss#readme",
   "devDependencies": {
     "concurrently": "^6.2.0"
   },
