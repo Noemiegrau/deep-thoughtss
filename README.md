@@ -31,7 +31,7 @@ Here are some guidelines for installing the project on your local machine in ord
 
 2. Then, make sure that your repo includes a package.json with the required dependencies. You can create one by running ```npm init``` in your command line, and ```npm install``` to install the dependencies.
 
-3. Run ```npm run develop``` in your terminal from the root directory to launch the application. Or check the deployed app directly on the app's heroku link (https://young-hollows-30363.herokuapp.com/). If the heroku link is not working open the app locally by entering ```npm run develop``` and going to the following link: ```http://localhost:3000``` 
+3. Run ```npm run develop``` in your terminal from the root directory to launch the application. Or check the deployed app directly on the app's heroku link (https://young-hollows-30363.herokuapp.com/). If the heroku link is not working open the app locally by entering ```npm run develop``` and going to the following link: ```http://localhost:3000``` (might be 3001, or 3002 etc depending on your local machine and if other apps are already using localhost).
 
 4. Enjoy and don't hesitate to contribute! 🙂
 
